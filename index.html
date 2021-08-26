@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Bank</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- FontAwsome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div id="login-area">
+        <h1 class="text-center"><i class="fas fa-piggy-bank"></i> Welcome to Prime Bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <br>
+            <input type="text" class="form-control" placeholder="Email">
+            <br>
+            <input type="password" class="form-control" placeholder="Type your Password">
+            <br>
+            <button id="login" type="button" class="btn btn-success">Log In</button>
+        </div>
+    </div>
+    <div id='transaction-area'>
+        <h1 class='text-center transaction-heading'><i class="fas fa-money-check-alt"></i> Transction Zone
+        </h1>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 pt-3">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="current-deposit">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 pt-3">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ <span id='current-withdraw'>00</span> </h2>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 pt-3">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ <span id="current-balance">00</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <br>
+                    <input id='depositAmount' type="text" class='form-control' placeholder='$ amount you deposit'>
+                    <br>
+                    <button id="addDeposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <br>
+                    <input id='withdrawAmount' type="text" class='form-control' placeholder='$ amount you withdraw'>
+                    <br>
+                    <button id='addWithdraw' class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS Script -->
+    <script src="index.js"></script>
+    <!-- JS BUNDLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
